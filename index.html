@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>返回 POST 请求内容</title>
+</head>
+<body>
+
+  <h1>POST 请求及响应数据显示</h1>
+
+  <form onsubmit="getData(); return false;">
+    <input type="text" id="url_input" placeholder="请输入请求地址" value="https://api.pearktrue.cn/api/mryw/">
+    <button type="submit">发送请求</button>
+  </form>
+
+  <div id="result-container" style="text-align: center; margin-top: 20px;"></div>
+
+  <script>
+    function getData() {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+          var resObj = JSON.parse(xhr.responseText);
+          document.getElementById('result-container').innerHTML = `<textarea cols=100 rows=10>${JSON.stringify(resObj, null, 4)}</textarea>`;
+        }
+      };
+      xhr.open("POST", document.getElementById('url_input').value.trim(), true);
+      xhr.setRequestHeader("Content-type", "application/json");
+      xhr.send(JSON.stringify({}));
+    }
+  </script>
+  
+</body>
+</html>
