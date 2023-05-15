@@ -1,8 +1,8 @@
-﻿Label: 90AI repo
-Origin: 90AI repo 
-Suite: stable
-Version: 1.0
-Codename: 90AI-repo
-Architectures: iphoneos-arm iphoneos-arm64
-Components: main
-Description: 90AI repo.
+﻿Label: 90AI repo  #源名称，Cydia中显示在插件列表中插件名称下方
+Origin: 90AI repo #源名称，Cydia中显示在源列表以及软件详情页下方
+Suite: stable     #源类型
+Version: 1.0      #源版本
+Codename: 90AI-repo   #这个是随意的，只是一个标识，但它必须是英文
+Architectures: iphoneos-arm iphoneos-arm64  #架构
+Components: main  #
+Description: 90AI repo #源描述
