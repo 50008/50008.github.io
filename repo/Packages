@@ -1,0 +1,16 @@
+Package: netskao.3dnetworkfixer
+Version: 1.1-6
+Architecture: iphoneos-arm
+Maintainer: Nets
+Installed-Size: 592
+Depends: firmware (>= 10.0), mobilesubstrate
+Filename: debs/netskao.3dnetworkfixer_1.1-6_iphoneos-arm.deb
+Size: 164854
+MD5sum: 06b8960b494c251315439e8a7922749d
+SHA1: 21ebd266688f216a9d525d201032b5e9f6ce88bd
+SHA256: cf555b7fbd2c555166527b67e224f1232f8836623f4b3682fdbc8d05982db8b4
+Section: Netskao-Tweaks
+Description: 长按桌面图标唤出应用菜单，快捷修复该应用的联网权限，支持iOS10-iOS14
+Author: Netskao
+Name: 3DNetworkFixer
+
