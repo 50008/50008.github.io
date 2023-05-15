@@ -1,5 +1,5 @@
 # sudo sh ./dpkg_packages.sh
-# sudo sh ./update.sh
+# 
 #!/bin/bash
 set -e
 
