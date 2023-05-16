@@ -1,34 +1,121 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>返回 POST 请求内容</title>
+	<title>电费计算器</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			margin: 20px auto;
+			max-width: 500px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type="number"] {
+			display: block;
+			margin-bottom: 20px;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			text-align: center;
+			width: 100%;
+			font-size: 16px;
+		}
+		button {
+			display: block;
+			margin: 20px auto;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			background-color: #4CAF50;
+			color: #fff;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.result {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			margin: 20px auto;
+			max-width: 500px;
+		}
+		.result p {
+			margin: 0;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		.formula {
+			font-size: 14px;
+			color: #999;
+			margin-top: 5px;
+		}
+	</style>
 </head>
 <body>
+	<h1>电费计算器</h1>
+	<form>
+		<label for="power">设备功耗（瓦）</label>
+		<input type="number" id="power" name="power" placeholder="请输入设备功耗">
 
-  <h1>POST 请求及响应数据显示</h1>
+		<label for="hours">每日使用时长（小时）</label>
+		<input type="number" id="hours" name="hours" placeholder="请输入每日使用时长" value="24">
 
-  <form onsubmit="getData(); return false;">
-    <input type="text" id="url_input" placeholder="请输入请求地址" value="https://api.pearktrue.cn/api/mryw/">
-    <button type="submit">发送请求</button>
-  </form>
+		<label for="price">电价（元/度）</label>
+		<input type="number" id="price" name="price" placeholder="请输入电价" value="0.6">
 
-  <div id="result-container" style="text-align: center; margin-top: 20px;"></div>
+		<button type="button" onclick="calculate()">计算</button>
+	</form>
 
-  <script>
-    function getData() {
-      var xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-          var resObj = JSON.parse(xhr.responseText);
-          document.getElementById('result-container').innerHTML = `<textarea cols=100 rows=10>${JSON.stringify(resObj, null, 4)}</textarea>`;
-        }
-      };
-      xhr.open("POST", document.getElementById('url_input').value.trim(), true);
-      xhr.setRequestHeader("Content-type", "application/json");
-      xhr.send(JSON.stringify({}));
-    }
-  </script>
-  
+	<div class="result">
+		<p id="daily"></p>
+		<p class="formula">每日电费 = 设备功耗 × 每日使用时长 ÷ 1000 × 电价</p>
+
+		<p id="weekly"></p>
+		<p class="formula">每周电费 = 每日电费 × 7</p>
+
+		<p id="monthly"></p>
+		<p class="formula">每月电费 = 每日电费 × 30</p>
+
+		<p id="yearly"></p>
+		<p class="formula">每年电费 = 每日电费 × 365</p>
+	</div>
+
+	<script>
+		function calculate() {
+			var power = document.getElementById("power").value;
+			var hours = document.getElementById("hours").value;
+			var price = document.getElementById("price").value;
+
+			var daily = power * hours / 1000 * price;
+			var weekly = daily * 7;
+			var monthly = daily * 30;
+			var yearly = daily * 365;
+
+			document.getElementById("daily").innerHTML = "每日电费：" + daily.toFixed(2) + "元";
+			document.getElementById("weekly").innerHTML = "每周电费：" + weekly.toFixed(2) + "元";
+			document.getElementById("monthly").innerHTML = "每月电费：" + monthly.toFixed(2) + "元";
+			document.getElementById("yearly").innerHTML = "每年电费：" + yearly.toFixed(2) + "元";
+		}
+	</script>
 </body>
 </html>
