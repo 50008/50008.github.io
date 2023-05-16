@@ -14,6 +14,22 @@ Description: 长按桌面图标唤出应用菜单，快捷修复该应用的联�
 Author: Netskao
 Name: 3DNetworkFixer
 
+Package: netskao.3dsafemodelaunch
+Version: 1.1-1
+Architecture: iphoneos-arm
+Maintainer: Nets
+Installed-Size: 300
+Depends: firmware (>= 9.0), mobilesubstrate
+Filename: debs/netskao.3dsafemodelaunch_1.1-1_iphoneos-arm.deb
+Size: 76094
+MD5sum: d8aa4e0df9c730ebafaf37dd3efd3eca
+SHA1: bc1263f40254c51636db2099bfaadbc045c8b33b
+SHA256: 04c8f974753325d05988b9fc81729d169f62a748b7d0c4831c20a79ca92d6c0b
+Section: Netskao-Tweaks
+Description: 通过桌面长按图标唤出快捷菜单使用安全模式启动应用（不加载插件）此插件主要为了弥补libhooker配置器没有桌面快捷安全模式启动
+Author: Netskao
+Name: 3DSafeModeLaunch
+
 Package: netskao.ccunicominfo
 Version: 1.1-4
 Architecture: iphoneos-arm
