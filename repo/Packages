@@ -1,20 +1,3 @@
-Package: com.tapsharp.libtapsharp
-Version: 1.0.5
-Architecture: iphoneos-arm
-Maintainer: Neo Ighodaro
-Installed-Size: 1052
-Depends: mobilesubstrate, firmware (= 14.3), firmware (= 14.3)
-Filename: debs/com.tapsharp.libtapsharp_1.0.5_iphoneos-arm.deb
-Size: 720784
-MD5sum: 5a12252fe3ccc5f1e9dc86006a0ba039
-SHA1: 0dd128f3ba05a51d08436225af6035e13c17a900
-SHA256: e7c9b8bb696f80f97aa989ceff13340f0bd0918f2e76e7f00c5f089e3b360ee2
-Section: Development
-Description: Shared tools for TapSharp tweaks（修改版：固件改为支持iOS14.3版本）
-Tag: role::developer
-Author: Neo Ighodaro
-Name: libTapSharp_14.3
-
 Package: netskao.3dnetworkfixer
 Version: 1.1-6
 Architecture: iphoneos-arm
