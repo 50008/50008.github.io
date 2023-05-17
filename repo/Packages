@@ -46,3 +46,23 @@ Description: 通过控制中心快捷查询联通话费/流量/语音剩余状�
 Author: Netskao
 Name: CCUnicomInfo
 
+Package: xyz.cypwn.instalauncher2
+Version: 1.8.2
+Architecture: iphoneos-arm
+Maintainer: CyPwn
+Installed-Size: 1148
+Depends: mobilesubstrate, preferenceloader, applist(>=1.5.15), firmware(>=12.1)
+Conflicts: com.jontelang.instalauncher2.beta
+Filename: debs/xyz.cypwn.instalauncher2_1.8.2_iphoneos-arm.deb
+Size: 371464
+MD5sum: 639e5eec70d7113ad48b0d4e88d06946
+SHA1: 6b896378d5ebd0c7a521ebab8012c7c20845adad
+SHA256: eb2d4c3470e5e855363af32a26ae7a7fde0a795d9ccb3500274e9e7e4fa012e9
+Section: Tweaks
+Description: Launch ANY app instantly
+Author: Jonathan Winger Lang <jontelang@gmail.com>
+Depiction: https://repo.cypwn.xyz/depiction/313
+Icon: https://repo.packix.com/api/Packages/5eb2931b947542001aff1661/icon/download?size=medium&hash=5eb2931b947542001aff1667
+Name: InstaLauncher 2
+Sileodepiction: https://repo.cypwn.xyz/sileo_depiction/313
+
