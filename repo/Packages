@@ -1,3 +1,54 @@
+Package: com.HBWechatHelper.ailun
+Version: 1.4.81
+Architecture: iphoneos-arm
+Maintainer: HuangBai <QQ:1343309363@qq.com>
+Depends: firmware (>= 7.0), mobilesubstrate
+Filename: debs/黄白助手1.4.8-1紧急修复.deb
+Size: 11835750
+MD5sum: f52b84603137c88361dddd3acc22175b
+SHA1: acccc4b3e1ed4d71175934b4da5f1086c71c56a1
+SHA256: 41f0cb4071c12b68897869dac4a681a09e988227e083e9dac7c25078fcd8046d
+Section: Tweaks
+Description: 黄白助手-微信插件                                                                                                                                                                 一个微信插件文本转语音以及点歌（发送网络语录舔狗日记骂人等文案或者4K原图手绘壁纸等，抢私聊红包，自定义信息尾巴，自定义拍一拍 百变小尾巴 实时尾巴时间等功能
+Author: HuangBai <QQ:1343309363@qq.com>
+Dev: HuangBai
+Name: 黄白助手(微信娱乐插件)
+Sponsor: Mao
+
+Package: com.curtin.pkc
+Version: 0.2-3
+Architecture: iphoneos-arm
+Maintainer: Curtin
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/com.curtin.pkc_0.2-3_iphoneos-arm.deb
+Size: 71816
+MD5sum: f3ac3fc3d0bf9ddf5e3e33bef9c54aed
+SHA1: 973a3521454f4dc94d732a45f5f7ee7809314e8e
+SHA256: 85794fd51e0c3eb1b2b1af47c6adb33041cae7101ab304c177268545c0c7f019
+Section: System
+Priority: optional
+Homepage: https://github.com/curtinlv
+Description: 本项目旨在学习 iOS 逆向的一点实践，不可使用于商业和个人其他意图。若使用不当，均由个人承担。如有侵权，请联系本人删除。
+Author: Curtin Lv
+Depiction: 本项目旨在学习 iOS 逆向的一点实践，不可使用于商业和个人其他意图。若使用不当，均由个人承担。如有侵权，请联系本人删除。
+Icon: https://raw.githubusercontent.com/curtinlv/JD-Script/main/pkc7.ico
+Name: PKC微信助手
+
+Package: com.pingfan.wechat
+Version: 2.1-3
+Architecture: iphoneos-arm
+Maintainer: pingfan
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/虚拟视频2.1-3.deb
+Size: 3551784
+MD5sum: 50a62a8bc14f186369c4a571ebe6b7f6
+SHA1: 16a272dc83b00106f7900f77f6e3721675bfc3d5
+SHA256: a8e8394df59a79452e1a33a3906760ad30fa2403d4c1ba8cb59819b0ddc2bdb3
+Section: Tweaks
+Description: 抢红包,推送小助手,伪装计算器,备注用户头像,虚拟视频，右滑快速备注，全局长按导航栏快捷功能,证书有效期查询,新增语音包，一键已读消息等。
+Author: pingfan
+Name: 虚拟视频
+
 Package: netskao.3dnetworkfixer
 Version: 1.1-6
 Architecture: iphoneos-arm
